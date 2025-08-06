@@ -292,6 +292,88 @@ export default function Home() {
         </div>
       </section>
 
+      {/* AI導入前の必要スタック */}
+      <section className="bg-gradient-to-br from-amber-50 to-orange-50 py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-3xl font-bold text-center mb-4">AI導入以前に必要な「最低限の近代化スタック」</h3>
+            <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+              AIを使えるようにする前に、<br />
+              社内に「情報が流れ、共有され、再利用される」環境を整える必要があります。
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white rounded-2xl shadow-lg p-8">
+                <h4 className="text-2xl font-bold mb-6 text-orange-600">推奨スタック（最小構成）</h4>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-orange-400 pl-4">
+                    <h5 className="font-semibold text-gray-900">Google Workspace</h5>
+                    <p className="text-sm text-gray-600">メール、ドキュメント、会議、クラウド管理の中核</p>
+                  </div>
+                  <div className="border-l-4 border-orange-400 pl-4">
+                    <h5 className="font-semibold text-gray-900">Slack</h5>
+                    <p className="text-sm text-gray-600">部署間コミュニケーション、AIアシスタント導入の母体</p>
+                  </div>
+                  <div className="border-l-4 border-orange-400 pl-4">
+                    <h5 className="font-semibold text-gray-900">Notion or Docs</h5>
+                    <p className="text-sm text-gray-600">ナレッジベース、業務マニュアルの集約場所</p>
+                  </div>
+                  <div className="border-l-4 border-orange-400 pl-4">
+                    <h5 className="font-semibold text-gray-900">GitHub（社内開発用途）</h5>
+                    <p className="text-sm text-gray-600">IT部門のコード・ドキュメント管理</p>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-orange-50 rounded-lg">
+                  <p className="text-sm text-gray-700 italic">
+                    これらが揃って初めて、「AIと人が一緒に働く環境」が成立します。
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-2xl shadow-lg p-8">
+                <h4 className="text-2xl font-bold mb-6 text-blue-600">地銀IT部門に向けた導入支援</h4>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <span className="text-blue-500 mr-3 mt-1">✓</span>
+                    <div>
+                      <p className="font-semibold text-gray-900">Google Workspaceの構成設計と導入</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-blue-500 mr-3 mt-1">✓</span>
+                    <div>
+                      <p className="font-semibold text-gray-900">Slack導入と社内Bot連携設計</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-blue-500 mr-3 mt-1">✓</span>
+                    <div>
+                      <p className="font-semibold text-gray-900">Notionによるマニュアル再構成＋RAG連携</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-blue-500 mr-3 mt-1">✓</span>
+                    <div>
+                      <p className="font-semibold text-gray-900">すべて閉域・限定アクセス構成も対応可能</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+                  <p className="text-sm font-semibold text-blue-800">
+                    セキュリティ要件に合わせた柔軟な構成が可能です
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* 導入形式 */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
