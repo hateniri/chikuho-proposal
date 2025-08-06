@@ -374,6 +374,110 @@ export default function Home() {
         </div>
       </section>
 
+      {/* OSSで業務効率化 */}
+      <section className="py-16 bg-gradient-to-br from-purple-50 to-indigo-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-3xl font-bold text-center mb-4">OSSで業務効率化は可能か？</h3>
+            <p className="text-xl text-center mb-2 text-gray-700">地銀業務とのマッチング整理</p>
+            <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+              業務全体の約80％は、OSSベースで十分対応できます。<br />
+              以下のような分類で、費用を抑えつつ実用的なAI活用が可能です。
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* OSSのみで十分な業務 */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-xl p-8"
+              >
+                <div className="flex items-center mb-6">
+                  <div className="bg-green-100 p-3 rounded-full">
+                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-2xl font-bold ml-4 text-green-700">OSSのみで十分な業務例</h4>
+                </div>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-green-400 pl-4">
+                    <p className="font-semibold text-gray-900">稟議書作成</p>
+                    <p className="text-sm text-gray-600">→ ChatGPT OSSでテンプレ化・自動補完</p>
+                  </div>
+                  <div className="border-l-4 border-green-400 pl-4">
+                    <p className="font-semibold text-gray-900">FAQ・規程検索</p>
+                    <p className="text-sm text-gray-600">→ RAG構成で社内文書を即時検索</p>
+                  </div>
+                  <div className="border-l-4 border-green-400 pl-4">
+                    <p className="font-semibold text-gray-900">社内勉強会</p>
+                    <p className="text-sm text-gray-600">→ OSS GPT×Whisperで教材を自動生成</p>
+                  </div>
+                  <div className="border-l-4 border-green-400 pl-4">
+                    <p className="font-semibold text-gray-900">IT部門支援</p>
+                    <p className="text-sm text-gray-600">→ Claude Code型 OSSツールで内製開発支援</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* 商用併用を視野に入れる業務 */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-xl p-8"
+              >
+                <div className="flex items-center mb-6">
+                  <div className="bg-purple-100 p-3 rounded-full">
+                    <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    </svg>
+                  </div>
+                  <h4 className="text-2xl font-bold ml-4 text-purple-700">商用の併用も視野に入れるべき業務</h4>
+                </div>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-purple-400 pl-4">
+                    <p className="font-semibold text-gray-900">コンプライアンスチェック（KYC／AML）</p>
+                  </div>
+                  <div className="border-l-4 border-purple-400 pl-4">
+                    <p className="font-semibold text-gray-900">契約書レビューなど対外的な生成物</p>
+                  </div>
+                  <div className="border-l-4 border-purple-400 pl-4">
+                    <p className="font-semibold text-gray-900">顧客対応チャット・音声通話ログの活用</p>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-purple-50 rounded-lg">
+                  <p className="text-sm text-gray-700">
+                    「地銀が責任を持つべき領域」には、精度と保証が伴うAPIの活用も必要です。
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* 結論 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              viewport={{ once: true }}
+              className="mt-12 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-2xl p-8 text-center"
+            >
+              <p className="text-xl font-bold">
+                結論：OSS中心 × 選択的API併用が、最も合理的かつ持続可能な構成です。
+              </p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* 導入形式 */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
