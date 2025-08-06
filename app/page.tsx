@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useState, useEffect } from "react"
-import { ChevronDownIcon, CheckCircleIcon, LightBulbIcon, RocketIcon, ShieldCheckIcon } from '@heroicons/react/24/outline'
+import { ChevronDownIcon, CheckCircleIcon, LightBulbIcon, RocketLaunchIcon, ShieldCheckIcon } from '@heroicons/react/24/outline'
 
 export default function Home() {
   const [expandedSection, setExpandedSection] = useState<string | null>(null)
@@ -255,7 +255,7 @@ export default function Home() {
               {
                 title: "社内ワークセッション",
                 subtitle: "実践型研修",
-                icon: <RocketIcon className="w-6 h-6" />,
+                icon: <RocketLaunchIcon className="w-6 h-6" />,
                 items: [
                   "業務に合わせたツール実演（Notion、ChatGPT、Zapier等）",
                   "IT担当者でなくても使える状態まで支援",
