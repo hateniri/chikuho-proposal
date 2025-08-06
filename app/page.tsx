@@ -93,7 +93,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700">筑邦銀行のネットワークと信頼を活かし、実質的な"技術チューター"として介入</span>
+                  <span className="text-gray-700">筑邦銀行のネットワークと信頼を活かし、実質的な「技術チューター」として介入</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-3 text-xl">✓</span>
@@ -125,7 +125,7 @@ export default function Home() {
                 "新しいツールを導入しても、初期設定のまま放置されている",
                 "ITリテラシーの高い社員が、社内で浮いて孤立している",
                 "技術者がいないため、何が妥当な選定か判断できない",
-                "研修をやっても、その後"何も変わっていない""
+                "研修をやっても、その後「何も変わっていない」"
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -161,7 +161,7 @@ export default function Home() {
                   title: "1. 技術ブリーフィング（週次／月次）",
                   items: [
                     "海外の生成AI・自動化・業務設計・ツール活用の最新事例を解説",
-                    "経営陣にも現場にも伝わる"翻訳力"重視",
+                    "経営陣にも現場にも伝わる『翻訳力』重視",
                     "概念で終わらず、「明日何を試すか」をその場で示す"
                   ]
                 },
@@ -177,7 +177,7 @@ export default function Home() {
                   title: "3. 現場ドキュメント化支援",
                   items: [
                     "口頭・属人化された業務を、誰でもわかる手順に変換",
-                    "現場の"暗黙知"をAIでドキュメント化し、ナレッジ資産へ変換",
+                    "現場の『暗黙知』をAIでドキュメント化し、ナレッジ資産へ変換",
                     "各種SaaSや社内ルールを統合した「1社だけの業務OS」設計"
                   ]
                 },
@@ -243,7 +243,7 @@ export default function Home() {
                 "無理に褒めない／ゴマをすらない",
                 "「わからない」と言わせる設計で思考停止を破壊",
                 "技術の導入だけでなく、「社内で回る状態」まで責任を持つ",
-                "属人的な"情シス頼り"文化から脱却する仕組みを一緒に設計"
+                "属人的な『情シス頼り』文化から脱却する仕組みを一緒に設計"
               ].map((item, index) => (
                 <motion.div
                   key={index}
